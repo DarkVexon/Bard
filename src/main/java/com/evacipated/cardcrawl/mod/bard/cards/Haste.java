@@ -17,7 +17,7 @@ public class Haste extends AbstractBardCard
 {
     public static final String ID = BardMod.makeID("Haste");
     private static final int COST = 1;
-    private static final int EXHAUSTIVE_USES = 3;
+    private static final int EXHAUSTIVE_USES = 2;
 
     public Haste()
     {
