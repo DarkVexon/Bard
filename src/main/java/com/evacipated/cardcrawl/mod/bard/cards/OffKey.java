@@ -20,9 +20,9 @@ public class OffKey extends AbstractBardCard
 {
     public static final String ID = BardMod.makeID("OffKey");
     private static final int COST = 1;
-    private static final int DAMAGE = 6;
-    private static final int BLOCK = 6;
-    private static final int UPGRADE = 3;
+    private static final int DAMAGE = 7;
+    private static final int BLOCK = 7;
+    private static final int UPGRADE = 2;
     private static final int REST = 2;
 
     public OffKey()
