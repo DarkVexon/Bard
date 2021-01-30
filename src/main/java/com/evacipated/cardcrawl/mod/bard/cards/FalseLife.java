@@ -18,7 +18,8 @@ public class FalseLife extends AbstractBardCard
 {
     public static final String ID = BardMod.makeID("FalseLife");
     private static final int COST = 2;
-    private static final int TEMP_HP = 10;
+    private static final int TEMP_HP = 8;
+    private static final int UPGRADE_TEMP_HP = 1;
     private static final int BONUS_TEMP_HP = 2;
     private static final int UPGRADE_BONUS_TEMP_HP = 1;
 
@@ -78,6 +79,7 @@ public class FalseLife extends AbstractBardCard
     {
         if (!upgraded) {
             upgradeName();
+            upgradeMagicNumber(UPGRADE_TEMP_HP);
             upgradeMagicNumber2(UPGRADE_BONUS_TEMP_HP);
         }
     }
