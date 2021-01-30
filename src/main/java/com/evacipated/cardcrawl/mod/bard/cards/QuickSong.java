@@ -15,9 +15,9 @@ import java.util.List;
 public class QuickSong extends AbstractBardCard
 {
     public static final String ID = BardMod.makeID("QuickSong");
-    private static final int COST = 1;
-    private static final int BLOCK = 8;
-    private static final int UPGRADE_COST = 0;
+    private static final int COST = 0;
+    private static final int BLOCK = 5;
+    private static final int UPGRADE_BLOCK = 3;
 
     public QuickSong()
     {
@@ -44,7 +44,7 @@ public class QuickSong extends AbstractBardCard
     {
         if (!upgraded) {
             upgradeName();
-            upgradeBaseCost(UPGRADE_COST);
+            upgradeBlock(UPGRADE_BLOCK);
         }
     }
 
