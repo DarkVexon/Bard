@@ -5,6 +5,7 @@ import com.evacipated.cardcrawl.mod.bard.characters.Bard;
 import com.evacipated.cardcrawl.mod.bard.notes.AbstractNote;
 import com.evacipated.cardcrawl.mod.bard.notes.BuffNote;
 import com.evacipated.cardcrawl.mod.bard.powers.BlinkPower;
+import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.ExhaustiveField;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -16,17 +17,16 @@ import java.util.List;
 public class Blink extends AbstractBardCard
 {
     public static final String ID = BardMod.makeID("Blink");
-    private static final int COST = 2;
+    private static final int COST = 1;
     private static final int DAMAGE_REDUCE = 50;
     private static final int TURNS = 1;
-    private static final int UPGRADE_TURNS = 1;
 
     public Blink()
     {
         super(ID, COST, CardType.SKILL, Bard.Enums.COLOR, CardRarity.UNCOMMON, CardTarget.SELF);
-
         magicNumber2 = baseMagicNumber2 = DAMAGE_REDUCE;
         magicNumber = baseMagicNumber = TURNS;
+        exhaust = true;
     }
 
     @Override
@@ -46,9 +46,13 @@ public class Blink extends AbstractBardCard
     {
         if (!upgraded) {
             upgradeName();
-            upgradeMagicNumber(UPGRADE_TURNS);
             rawDescription = UPGRADE_DESCRIPTION;
             initializeDescription();
+
+            exhaust = false;
+            ExhaustiveField.ExhaustiveFields.baseExhaustive.set(this, 2);
+            ExhaustiveField.ExhaustiveFields.exhaustive.set(this, 2);
+            ExhaustiveField.ExhaustiveFields.isExhaustiveUpgraded.set(this, true);
         }
     }
 

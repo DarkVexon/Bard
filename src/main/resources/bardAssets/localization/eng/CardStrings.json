@@ -173,8 +173,8 @@
   },
   "${ModID}:Blink": {
     "NAME": "Blink",
-    "DESCRIPTION": "Take 50% less damage for !M! turn.",
-    "UPGRADE_DESCRIPTION": "Take 50% less damage for !M! turns."
+    "DESCRIPTION": "Take 50% less damage for !M! turn. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Take 50% less damage for !M! turn. NL Exhaustive !stslib:ex!."
   },
   "${ModID}:LingeringEcho": {
     "NAME": "Lingering Echo",
