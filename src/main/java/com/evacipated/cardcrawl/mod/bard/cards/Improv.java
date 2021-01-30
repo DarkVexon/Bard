@@ -16,7 +16,7 @@ public class Improv extends AbstractBardCard
 {
     public static final String ID = BardMod.makeID("Improv");
     private static final int COST = 0;
-    private static final int NOTES_PER_MELODY = 6;
+    private static final int NOTES_PER_MELODY = 4;
     private static final int UPGRADE_NOTES_PER_MELODY = -1;
 
     public Improv()
