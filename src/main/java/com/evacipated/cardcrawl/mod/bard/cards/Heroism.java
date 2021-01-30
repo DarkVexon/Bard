@@ -19,8 +19,8 @@ public class Heroism extends AbstractBardCard
 {
     public static final String ID = BardMod.makeID("Heroism");
     private static final int COST = 1;
-    private static final int TEMP_HP = 5;
-    private static final int UPGRADE_TEMP_HP = 3;
+    private static final int TEMP_HP = 4;
+    private static final int UPGRADE_TEMP_HP = 2;
     private static final int INSPIRATION = 50;
 
     public Heroism()
