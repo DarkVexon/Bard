@@ -16,8 +16,8 @@ public class BucklerBash extends AbstractBardCard
 {
     public static final String ID = BardMod.makeID("BucklerBash");
     private static final int COST = 1;
-    private static final int BLOCK_LOSS = 5;
-    private static final int UPGRADE_BLOCK_LOSS = 2;
+    private static final int BLOCK_LOSS = 4;
+    //private static final int UPGRADE_BLOCK_LOSS = 2;
     private static final int DAMAGE = 12;
     private static final int UPGRADE_DAMAGE = 6;
 
@@ -47,7 +47,7 @@ public class BucklerBash extends AbstractBardCard
         if (!upgraded) {
             upgradeName();
             upgradeDamage(UPGRADE_DAMAGE);
-            upgradeMagicNumber(UPGRADE_BLOCK_LOSS);
+            //upgradeMagicNumber(UPGRADE_BLOCK_LOSS);
         }
     }
 
