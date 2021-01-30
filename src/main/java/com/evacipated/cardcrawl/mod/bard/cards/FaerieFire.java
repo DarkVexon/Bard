@@ -26,8 +26,7 @@ public class FaerieFire extends AbstractBardCard
 
     public FaerieFire()
     {
-        super(ID, COST, CardType.SKILL, Bard.Enums.COLOR, CardRarity.UNCOMMON, CardTarget.ALL_ENEMY);
-        selfRetain = true;
+        super(ID, COST, CardType.SKILL, Bard.Enums.COLOR, CardRarity.COMMON, CardTarget.ALL_ENEMY);
         magicNumber = baseMagicNumber = VUL;
     }
 

@@ -120,7 +120,7 @@
   },
   "${ModID}:FaerieFire": {
     "NAME": "Faerie Fire",
-    "DESCRIPTION": "Retain. NL Apply !M! Vulnerable to ALL enemies."
+    "DESCRIPTION": "Apply !M! Vulnerable to ALL enemies."
   },
   "${ModID}:Shout": {
     "NAME": "Shout",

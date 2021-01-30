@@ -23,7 +23,7 @@ public class HideousLaughter extends AbstractBardCard
 
     public HideousLaughter()
     {
-        super(ID, COST, CardType.SKILL, Bard.Enums.COLOR, CardRarity.COMMON, CardTarget.ENEMY);
+        super(ID, COST, CardType.SKILL, Bard.Enums.COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY);
 
         magicNumber = baseMagicNumber = DEBUFF_AMT;
     }
