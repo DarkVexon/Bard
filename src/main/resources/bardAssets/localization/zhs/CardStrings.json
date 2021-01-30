@@ -120,7 +120,7 @@
   },
   "${ModID}:FaerieFire": {
     "NAME": "妖火",
-    "DESCRIPTION": "给予所有敌人 !M! 层 易伤 。"
+    "DESCRIPTION": " 保留 。 NL 给予所有敌人 !M! 层 易伤 。"
   },
   "${ModID}:Shout": {
     "NAME": "吼叫",
@@ -142,7 +142,7 @@
   },
   "${ModID}:LifeDrain": {
     "NAME": "吸取生命",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得一半未被 点 格挡 的伤害的 暂时性生命 。"
+    "DESCRIPTION": "虚无 。 NL 造成 !D! 点伤害。 NL 获得一半未被 点 格挡 的伤害的 暂时性生命 。"
   },
   "${ModID}:SixFourTime": {
     "NAME": "四六拍",
@@ -165,7 +165,7 @@
   },
   "${ModID}:PowerWordStun": {
     "NAME": "律令震慑",
-    "DESCRIPTION": "如果敌人少于 !${ModID}:M2! % 生命，将它击晕 !M! 回合。",
+    "DESCRIPTION": "如果敌人少于 !${ModID}:M2! % 生命，将它击晕 !M! 回合。 NL 消耗性 !stslib:ex! 。",
     "EXTENDED_DESCRIPTION": [
       "(将被 击晕 。) NL ",
       "(不会 击晕 。) NL "
@@ -173,8 +173,8 @@
   },
   "${ModID}:Blink": {
     "NAME": "闪现术",
-    "DESCRIPTION": "接下来的 !M! 个回合，降低 50% 受到伤害。",
-    "UPGRADE_DESCRIPTION": "接下来的 !M! 个回合，降低 50% 受到伤害。"
+    "DESCRIPTION": "接下来的 !M! 个回合，降低 50% 受到伤害。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "接下来的 !M! 个回合，降低 50% 受到伤害。 NL 消耗性 !stslib:ex! 。"
   },
   "${ModID}:LingeringEcho": {
     "NAME": "萦绕回音",
