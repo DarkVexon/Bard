@@ -18,7 +18,7 @@ public class TinyHut extends AbstractBardCard
 {
     public static final String ID = BardMod.makeID("TinyHut");
     private static final int COST = 1;
-    private static final int BLOCK = 5;
+    private static final int BLOCK = 6;
     private static final int UPGRADE_BLOCK = 3;
     private static final int DRAW = 1;
 
