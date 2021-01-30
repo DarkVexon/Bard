@@ -16,7 +16,7 @@ import java.util.List;
 public class Blink extends AbstractBardCard
 {
     public static final String ID = BardMod.makeID("Blink");
-    private static final int COST = 1;
+    private static final int COST = 2;
     private static final int DAMAGE_REDUCE = 50;
     private static final int TURNS = 1;
     private static final int UPGRADE_TURNS = 1;
