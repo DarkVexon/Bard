@@ -20,7 +20,7 @@ public class FeastOnFear extends AbstractBardCard
 {
     public static final String ID = BardMod.makeID("FeastOnFear");
     private static final int COST = 1;
-    private static final int BLOCK = 6;
+    private static final int BLOCK = 5;
     private static final int UPGRADE_BLOCK = 2;
 
     public FeastOnFear()
