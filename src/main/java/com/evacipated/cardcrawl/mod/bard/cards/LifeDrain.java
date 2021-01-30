@@ -20,12 +20,12 @@ public class LifeDrain extends AbstractBardCard
     public static final String ID = BardMod.makeID("LifeDrain");
     private static final int COST = 2;
     private static final int DAMAGE = 8;
-    private static final int UPGRADE_DAMAGE = 4;
+    private static final int UPGRADE_DAMAGE = 2;
 
     public LifeDrain()
     {
         super(ID, COST, CardType.ATTACK, Bard.Enums.COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY);
-
+        isEthereal = true;
         baseDamage = DAMAGE;
     }
 
