@@ -22,7 +22,7 @@ public class FirstStrike extends AbstractBardCard implements StartupCard
     public static final String ID = BardMod.makeID("FirstStrike");
     private static final int COST = 1;
     private static final int DAMAGE = 8;
-    private static final int UPGRADE_DAMAGE = 3;
+    private static final int UPGRADE_DAMAGE = 2;
 
     public FirstStrike()
     {
@@ -58,6 +58,7 @@ public class FirstStrike extends AbstractBardCard implements StartupCard
         if (!upgraded) {
             upgradeName();
             upgradeDamage(UPGRADE_DAMAGE);
+            upgradeMagicNumber(UPGRADE_DAMAGE);
         }
     }
 
