@@ -27,14 +27,14 @@ public class PowerWordStun extends AbstractBardCard
     private static final int COST = 2;
     private static final int STUN = 1;
     private static final int HP_THRESHOLD = 50;
-    private static final int UPGRADE_HP_THRESHOLD = 20;
+    private static final int UPGRADE_HP_THRESHOLD = 16;
 
     private CardStrings dootStrings = CardCrawlGame.languagePack.getCardStrings(Doot.ID);
 
     public PowerWordStun()
     {
         super(ID, COST, CardType.SKILL, Bard.Enums.COLOR, CardRarity.RARE, CardTarget.ENEMY);
-
+        isEthereal = true;
         magicNumber = baseMagicNumber = STUN;
         magicNumber2 = baseMagicNumber2 = HP_THRESHOLD;
     }

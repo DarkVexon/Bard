@@ -165,7 +165,7 @@
   },
   "${ModID}:PowerWordStun": {
     "NAME": "Power Word Stun",
-    "DESCRIPTION": "If the enemy has less than !${ModID}:M2! % HP, Stun it for !M! turn.",
+    "DESCRIPTION": "Ethereal. NL If the enemy has less than !${ModID}:M2! % HP, Stun it for !M! turn.",
     "EXTENDED_DESCRIPTION": [
       "(Will Stun.) NL ",
       "(Will NOT Stun.) NL "
