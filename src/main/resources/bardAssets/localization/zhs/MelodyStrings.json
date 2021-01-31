@@ -9,7 +9,7 @@
   },
   "${ModID}:DivineProtection": {
     "NAME": "圣佑术",
-    "DESCRIPTION": "获得 8 点 暂时性生命 。"
+    "DESCRIPTION": "获得 7 点 暂时性生命 。"
   },
   "${ModID}:Draw": {
     "NAME": "抽牌",
