@@ -142,7 +142,8 @@
   },
   "${ModID}:LifeDrain": {
     "NAME": "Life Drain",
-    "DESCRIPTION": "Ethereal. NL Deal !D! damage. NL Gain Temporary_HP for half the unblocked damage dealt."
+    "DESCRIPTION": "Deal !D! damage. NL Gain Temporary_HP for half the unblocked damage dealt. NL Exhaust.",
+    "UPGRADE_DESCRIPTION": "Deal !D! damage. NL Gain Temporary_HP for half the unblocked damage dealt. NL Exhaustive !stslib:ex!."
   },
   "${ModID}:SixFourTime": {
     "NAME": "6/4 Time",

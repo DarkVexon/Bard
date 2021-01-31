@@ -142,7 +142,8 @@
   },
   "${ModID}:LifeDrain": {
     "NAME": "吸取生命",
-    "DESCRIPTION": "虚无 。 NL 造成 !D! 点伤害。 NL 获得一半未被 点 格挡 的伤害的 暂时性生命 。"
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得一半未被 点 格挡 的伤害的 暂时性生命 。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": "造成 !D! 点伤害。 NL 获得一半未被 点 格挡 的伤害的 暂时性生命 。 NL 消耗性 !stslib:ex! 。"
   },
   "${ModID}:SixFourTime": {
     "NAME": "四六拍",
