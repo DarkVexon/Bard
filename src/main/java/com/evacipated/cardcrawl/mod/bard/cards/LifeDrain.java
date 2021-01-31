@@ -6,6 +6,7 @@ import com.evacipated.cardcrawl.mod.bard.characters.Bard;
 import com.evacipated.cardcrawl.mod.bard.notes.AbstractNote;
 import com.evacipated.cardcrawl.mod.bard.notes.AttackNote;
 import com.evacipated.cardcrawl.mod.bard.vfx.combat.LifeDrainEffect;
+import com.evacipated.cardcrawl.mod.stslib.fields.cards.AbstractCard.ExhaustiveField;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -19,13 +20,12 @@ public class LifeDrain extends AbstractBardCard
 {
     public static final String ID = BardMod.makeID("LifeDrain");
     private static final int COST = 2;
-    private static final int DAMAGE = 8;
-    private static final int UPGRADE_DAMAGE = 2;
+    private static final int DAMAGE = 10;
 
     public LifeDrain()
     {
         super(ID, COST, CardType.ATTACK, Bard.Enums.COLOR, CardRarity.UNCOMMON, CardTarget.ENEMY);
-        isEthereal = true;
+        exhaust = true;
         baseDamage = DAMAGE;
     }
 
@@ -47,7 +47,13 @@ public class LifeDrain extends AbstractBardCard
     {
         if (!upgraded) {
             upgradeName();
-            upgradeDamage(UPGRADE_DAMAGE);
+            rawDescription = UPGRADE_DESCRIPTION;
+            initializeDescription();
+
+            exhaust = false;
+            ExhaustiveField.ExhaustiveFields.baseExhaustive.set(this, 2);
+            ExhaustiveField.ExhaustiveFields.exhaustive.set(this, 2);
+            ExhaustiveField.ExhaustiveFields.isExhaustiveUpgraded.set(this, true);
         }
     }
 
